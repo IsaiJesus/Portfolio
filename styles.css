@@ -21,7 +21,6 @@
 
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /*CONTAINER*/
@@ -171,7 +170,7 @@ html{
   transition: all 0.8s ease;
 }
 
-.menu-off{
+.menu-on{
   transition: all 0.8s ease;
   left: 0;
 }
@@ -267,22 +266,8 @@ html{
   z-index: 9;
 }
 
-.bubble1{
-  height: 420px;
-  width: 540px;
-  position: absolute;
-  z-index: 1;
-  background-color: #008CFF;
-  border-radius: 65% 35% 39% 61% / 35% 63% 37% 65%; 
-}
-
 @media only screen and (max-width: 576px){
   .iam-img img{
-    width: 100%;
-  }
-
-  .bubble1{
-    height: 100%;
     width: 100%;
   }
 }
@@ -727,6 +712,52 @@ html{
   background-color: #fff;
   color: #008cff;
   outline: 1px solid #008cff;
+}
+
+.pop-up{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  font-size: 24px;
+  background-color: #fff;
+  box-shadow: 0px 6px 65px -20px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  position: fixed;
+  z-index: 30;
+}
+
+.pop-up-off{
+  display: none;
+}
+
+.pop-up p{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.pop-up button{
+  padding: 12px 25px;
+  margin: 12px 10px 20px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ef233c;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pop-up button:hover{
+  background-color: #fff;
+  outline: 1px solid #ef233c;
+  color: #ef233c;
 }
 
 /*LINKS*/

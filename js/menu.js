@@ -15,5 +15,5 @@ link5.addEventListener('click', handleToggle);
 menuResume.addEventListener('click', handleToggle);
 
 function handleToggle() {
-  document.querySelector(".menu-container").classList.toggle("menu-off");
+  document.querySelector(".menu-container").classList.toggle("menu-on");
 }

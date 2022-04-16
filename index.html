@@ -75,7 +75,6 @@
         </div>
         <div class="iam-img">
           <img src="img/aztec.png" alt="Isai Jesús" />
-          <div class="bubble1"></div>
         </div>
       </section>
 
@@ -126,7 +125,7 @@
               class="experience-title"
             >
               <span class="fas fa-school"></span>
-              <h4>Website CBTA 39</h4>
+              <h4>CBTA's 39 Website</h4>
               <p>June 2020</p>
             </a>
             <div class="experience-details">
@@ -391,18 +390,23 @@
             ></a>
           </div>
           <form class="form-box">
-            <input class="name" type="text" placeholder="Name" />
-            <input class="email" type="email" placeholder="Email" />
-            <textarea class="message" rows="5" placeholder="Message"></textarea>
+            <input id="name-form" class="name" type="text" placeholder="Name" required autocomplete="off"/>
+            <input id="email-form" class="email" type="email" placeholder="Email" required/>
+            <textarea id="message-form" class="message" rows="5" placeholder="Message" required></textarea>
             <button class="send">Send</button>
           </form>
         </div>
       </section>
+      <div class="pop-up-off">
+        <p>Thank you for your message!😉</p>
+        <button id="pop-up-button">Close</button>
+      </div>
       
     </div>
 
     <script src="js/index.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/form.js"></script>
 
   </body>
 </html>
