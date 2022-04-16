@@ -4,10 +4,29 @@
   font-family: 'Barlow', sans-serif;
 }
 
+/*SCROLLBAR*/
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #2121215d;
+  border-radius: 25px;
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 /*CONTAINER*/
 
 .container{
-  /*background-color: #0c214e;*/
   background-color: #FFFFFF;
 }
 
@@ -20,6 +39,9 @@
   justify-content: space-between;
   background-color: #fff;
   box-shadow: rgba(180, 180, 180, 0.1) 0px 5px 12px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .letter-logo{
@@ -61,7 +83,7 @@
 }
 
 .img-logo img{
-  width: 80px;
+  width: 60px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -134,6 +156,68 @@
   }
 }
 
+/*MENU-MOBILE*/
+
+.menu-container{
+  height: calc(100% - 89px);
+  width: 100%;
+  top: 89;
+  left: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  position: absolute;
+  z-index: 15;
+  transition: all 0.8s ease;
+}
+
+.menu-off{
+  transition: all 0.8s ease;
+  left: 0;
+}
+
+.menu-container ul{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-container ul li{
+  list-style: none;
+}
+
+.menu-container ul li a{
+  padding: 12px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-menu{
+  color: #000;
+}
+
+.link-menu:hover{
+  color: #008cff;
+}
+
+.menu-resume{
+  background-color: #008cff;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.menu-resume:hover{
+  outline: 1px solid #008cff;
+  background-color: #fff;
+  color: #008cff;
+}
+
 /*I AM*/
 
 .iam-container{
@@ -153,6 +237,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 10;
 }
 
 .iam-box header h1{
@@ -180,6 +265,7 @@
 .iam-img img{
   margin: 10px;
   width: 350px;
+  z-index: 9;
 }
 
 @media only screen and (max-width: 768px) {
@@ -340,12 +426,12 @@
   padding: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  /*box-shadow: 0px 12px 35px -25px rgba(0, 0, 0, 0.42);
-  white-space: nowrap;
-  overflow: hidden;*/
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 12px 35px -25px rgba(0, 0, 0, 0.42);
+  /*white-space: nowrap;
+  overflow: hidden;*/ 
 }
 
 .card h5{
@@ -365,25 +451,27 @@
 .card-body{
   height: 200px;
   display: flex;
-  position: relative;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .card-body img{
   width: 100%;
+  border-radius: 5px;
   object-fit: cover;
 }
 
 .card-link{
   display: flex;
-  position: absolute;
-  top: 82%;
-  left: 82%;
+  align-self: flex-end;
+  margin-top: 5px;
+  padding: 2px;
 }
 
 .card-link a{
-  padding: 5px 0px;
-  margin: 0px 6px;
-  font-size: 20px;
+  margin: 4px 6px;
+  padding: 5px;
+  font-size: 22px;
   text-decoration: none;
   color: #008cff;
   transition: 0.3s;
@@ -391,7 +479,6 @@
 
 .card-link a:hover{
   color: #000;
-  text-shadow: 0 0 2px #fff;
 }
 
 .more{
@@ -512,7 +599,7 @@
 }
 
 .social-box{
-  padding: 20px;
+  padding: 15px;
   margin: 10px 0px;
   width: 400px;
   display: flex;
@@ -579,11 +666,13 @@
   width: 80%;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #000;
+  outline: 1px solid #000;
+  border: none;
 }
 
 .form-box input:focus{
   outline: none;
+  outline: 1px solid #000;
 }
 
 .form-box textarea{
@@ -592,12 +681,14 @@
   width: 80%;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #000;
+  outline: 1px solid #000;
+  border: none;
   resize: none;
 }
 
 .form-box textarea:focus{
   outline: none;
+  outline: 1px solid #000;
 }
 
 .form-box button{
@@ -619,17 +710,35 @@
   outline: 1px solid #008cff;
 }
 
-/*SCROLLBAR*/
+/*LINKS*/
 
-::-webkit-scrollbar{
-  width: 8px;
+#about{
+  scroll-margin-top: 78px;
 }
 
-::-webkit-scrollbar-track{
-  background: none;
+#experience{
+  scroll-margin-top: 78px;
 }
 
-::-webkit-scrollbar-thumb{
-  background: #2121215d;
-  border-radius: 25px;
+#work{
+  scroll-margin-top: 78px;
+}
+
+#skills{
+  scroll-margin-top: 78px;
+}
+
+#contact{
+  scroll-margin-top: 78px;
+}
+
+/*BUBBLES*/
+
+.bubble1{
+  height: 420px;
+  width: 540px;
+  position: absolute;
+  z-index: 1;
+  background-color: #008CFF;
+  border-radius: 65% 35% 39% 61% / 35% 63% 37% 65%; 
 }
