@@ -161,13 +161,12 @@ html{
 .menu-container{
   height: calc(100% - 89px);
   width: 100%;
-  top: 89;
   left: -100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   z-index: 15;
   transition: all 0.8s ease;
 }
