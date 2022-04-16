@@ -267,6 +267,26 @@ html{
   z-index: 9;
 }
 
+.bubble1{
+  height: 420px;
+  width: 540px;
+  position: absolute;
+  z-index: 1;
+  background-color: #008CFF;
+  border-radius: 65% 35% 39% 61% / 35% 63% 37% 65%; 
+}
+
+@media only screen and (max-width: 576px){
+  .iam-img img{
+    width: 100%;
+  }
+
+  .bubble1{
+    height: 100%;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .iam-container{
     grid-template-columns: 100%;
@@ -729,15 +749,4 @@ html{
 
 #contact{
   scroll-margin-top: 78px;
-}
-
-/*BUBBLES*/
-
-.bubble1{
-  height: 420px;
-  width: 540px;
-  position: absolute;
-  z-index: 1;
-  background-color: #008CFF;
-  border-radius: 65% 35% 39% 61% / 35% 63% 37% 65%; 
 }
