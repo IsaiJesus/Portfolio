@@ -222,6 +222,8 @@ html{
   padding: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /*background-color: #001e56;
+  color: #F5F8FF;*/
 }
 
 @media only screen and (max-width: 576px){
@@ -258,6 +260,15 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.bubble{
+  position: absolute;
+  border-radius: 62% 38% 39% 61% / 33% 42% 58% 67%;
+  background-color: #008cff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .iam-img img{
@@ -450,6 +461,23 @@ html{
   font-size: 18px;
   /*overflow: hidden;
   text-overflow: ellipsis;*/
+}
+
+.technologies{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.technologies li{
+  list-style: none;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.technologies li img{
+  height: 18px;
 }
 
 .card-body{
