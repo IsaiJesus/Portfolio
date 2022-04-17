@@ -340,12 +340,12 @@ html{
   padding: 8px;
   margin-bottom: 10px;
   display: flex;
-  align-items: center;
-  text-decoration: none;
+  align-items: baseline;
+  text-decoration: 1px #000 underline;
 }
 
 .experience-title:hover{
-  text-decoration: 1px #000 underline;
+  text-decoration: 1.4px #000 underline;
 }
 
 .fa-medal{
@@ -603,7 +603,7 @@ html{
 }
 
 .social-box{
-  padding: 15px;
+  padding: 14px;
   margin: 10px 0px;
   width: 400px;
   display: flex;
@@ -622,7 +622,7 @@ html{
 
 .social-box a{
   padding: 8px;
-  margin: 10px;
+  margin: 8px;
   font-size: 34px;
   color: #008cff;
   text-decoration: none;
