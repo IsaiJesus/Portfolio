@@ -11,11 +11,11 @@
 }
 
 ::-webkit-scrollbar-track{
-  background: none;
+  background-color: #001948;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: #2121215d;
+  background: #ADADAD40;
   border-radius: 25px;
 }
 
@@ -37,10 +37,12 @@ html{
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  box-shadow: rgba(180, 180, 180, 0.1) 0px 5px 12px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 12px 0px;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 10;
+  background-color: #001948;
+  color: #F5F8FF;
 }
 
 .letter-logo{
@@ -78,7 +80,6 @@ html{
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: #000;
 }
 
 .img-logo img{
@@ -105,7 +106,7 @@ html{
   padding: 12px 15px;
   margin: 8px;
   font-size: 15px;
-  color: #000;
+  color: #F5F8FF;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -128,7 +129,7 @@ html{
 }
 
 .resume:hover{
-  background-color: #fff;
+  background-color: #001948;
   color: #008cff;
   outline: 1px solid #008cff;
 }
@@ -146,7 +147,7 @@ html{
 }
 
 .fa-bars:hover{
-  color: #000;
+  color: #F5F8FF;
 }
 
 @media only screen and (max-width: 768px) {
@@ -164,9 +165,9 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #001948;
   position: fixed;
-  z-index: 15;
+  z-index: 9;
   transition: all 0.8s ease;
 }
 
@@ -196,7 +197,7 @@ html{
 }
 
 .link-menu{
-  color: #000;
+  color: #F5F8FF;
 }
 
 .link-menu:hover{
@@ -212,7 +213,7 @@ html{
 
 .menu-resume:hover{
   outline: 1px solid #008cff;
-  background-color: #fff;
+  background-color: #001948;
   color: #008cff;
 }
 
@@ -222,8 +223,9 @@ html{
   padding: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /*background-color: #001e56;
-  color: #F5F8FF;*/
+  /*background-color: #001e56;*/
+  background-color: #001948;
+  color: #F5F8FF;
 }
 
 @media only screen and (max-width: 576px){
@@ -237,7 +239,7 @@ html{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  z-index: 10;
+  z-index: 8;
 }
 
 .iam-box header h1{
@@ -262,7 +264,8 @@ html{
   justify-content: center;
 }
 
-.bubble{
+.iam-img::after{
+  content: '';
   position: absolute;
   border-radius: 62% 38% 39% 61% / 33% 42% 58% 67%;
   background-color: #008cff;
@@ -274,7 +277,7 @@ html{
 .iam-img img{
   margin: 10px;
   width: 350px;
-  z-index: 9;
+  z-index: 7;
 }
 
 @media only screen and (max-width: 576px){
@@ -293,6 +296,8 @@ html{
 
 .about-container{
   padding: 30px;
+  background-color: #001948;
+  color: #F5F8FF;
 }
 
 @media only screen and (max-width: 576px){
@@ -314,12 +319,28 @@ html{
   padding: 20px;
   margin-bottom: 8px;
   font-size: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 /*EXPERIENCE*/
 
 .experience-container{
   padding: 30px;
+  position: relative;
+  background-color: #001948;
+  color: #F5F8FF;
+}
+
+.experience-container::before{
+  content: '';
+  background-color: #008CFF;
+  height: 90%;
+  width: 100%;
+  top: 10;
+  left: 0;
+  position: absolute;
+  transform: skewY(10deg);
 }
 
 @media only screen and (max-width: 576px){
@@ -352,11 +373,11 @@ html{
   margin-bottom: 10px;
   display: flex;
   align-items: baseline;
-  text-decoration: 1px #000 underline;
+  text-decoration: 1px #DADADA underline;
 }
 
 .experience-title:hover{
-  text-decoration: 1.4px #000 underline;
+  text-decoration: 1.4px #DADADA underline;
 }
 
 .fa-medal{
@@ -377,13 +398,13 @@ html{
 
 .experience-title h4{
   padding: 0px 12px;
-  color: #000;
+  color: #F5F8FF;
   font-size: 22px;
 }
 
 .experience-title p{
   font-size: 18px;
-  color: rgb(50, 50, 50);
+  color: rgb(72, 72, 72);
 }
 
 .experience-details{
@@ -392,7 +413,7 @@ html{
 }
 
 .experience-details p a{
-  color: #000;
+  color: #F5F8FF;
 }
 
 /*WORK*/
@@ -401,6 +422,8 @@ html{
   padding: 30px;
   display: flex;
   flex-direction: column;
+  background-color: #001948;
+  color: #F5F8FF;
 }
 
 @media only screen and (max-width: 576px) {
@@ -423,6 +446,8 @@ html{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 @media only screen and (max-width: 768px) {
@@ -443,8 +468,9 @@ html{
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
-  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 12px 35px -25px rgba(0, 0, 0, 0.42);
+  background-color: rgba(0, 0, 0, 0.06);
   /*white-space: nowrap;
   overflow: hidden;*/ 
 }
@@ -483,7 +509,7 @@ html{
 .card-body{
   height: 200px;
   display: flex;
-  outline: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
@@ -510,7 +536,7 @@ html{
 }
 
 .card-link a:hover{
-  color: #000;
+  color: #F5F8FF;
 }
 
 .more{
@@ -520,7 +546,7 @@ html{
   align-items: center;
   align-self: center;
   font-size: 16px;
-  background-color: #fff;
+  background-color: none;
   color: #008cff;
   border: 1px solid #008cff;
   border-radius: 5px;
@@ -546,6 +572,20 @@ html{
 
 .skills-container{
   padding: 30px;
+  background-color: #001948;
+  color: #F5F8FF;
+  position: relative;
+}
+
+.skills-container::before{
+  content: '';
+  background-color: #008CFF;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: skewY(-15deg);
 }
 
 @media only screen and (max-width: 576px){
@@ -599,6 +639,8 @@ html{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background-color: #001948;
+  color: #F5F8FF;
 }
 
 @media only screen and (max-width: 576px){
@@ -638,7 +680,7 @@ html{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  outline: 1px solid #000;
+  outline: 1px solid #F5F8FF;
   border-radius: 5px;
 }
 
@@ -698,13 +740,19 @@ html{
   width: 80%;
   font-size: 16px;
   border-radius: 5px;
-  outline: 1px solid #000;
+  color: #F5F8FF;
+  outline: 1px solid #F5F8FF;
+  background-color: #001948;
   border: none;
+}
+
+.form-box input::placeholder{
+  color: #AEAEAE;
 }
 
 .form-box input:focus{
   outline: none;
-  outline: 1px solid #000;
+  outline: 1px solid #F5F8FF;
 }
 
 .form-box textarea{
@@ -713,14 +761,20 @@ html{
   width: 80%;
   font-size: 16px;
   border-radius: 5px;
-  outline: 1px solid #000;
+  color: #F5F8FF;
+  outline: 1px solid #F5F8FF;
+  background-color: #001948;
   border: none;
   resize: none;
 }
 
+.form-box textarea::placeholder{
+  color: #AEAEAE;
+}
+
 .form-box textarea:focus{
   outline: none;
-  outline: 1px solid #000;
+  outline: 1px solid #F5F8FF;
 }
 
 .form-box button{
@@ -737,7 +791,7 @@ html{
 }
 
 .form-box button:hover{
-  background-color: #fff;
+  background-color: #001948;
   color: #008cff;
   outline: 1px solid #008cff;
 }
@@ -757,7 +811,7 @@ html{
   box-shadow: 0px 6px 65px -20px rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   position: fixed;
-  z-index: 30;
+  z-index: 10;
 }
 
 .pop-up-off{
