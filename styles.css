@@ -19,6 +19,10 @@
   border-radius: 25px;
 }
 
+::selection{
+  background-color: #000;
+}
+
 html{
   scroll-behavior: smooth;
 }

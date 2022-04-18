@@ -130,7 +130,7 @@ sr.reveal('#card6', {
   distance: '50px'
 });
 sr.reveal('.more', {
-  duration: 1600,
+  duration: 1000,
   origin: 'left',
   distance: '50px'
 });
@@ -144,7 +144,7 @@ sr.reveal('#skills-header', {
 });
 sr.reveal('.skills-box', {
   duration: 1200,
-  origin: 'left',
+  origin: 'bottom',
   distance: '50px'
 });
 
