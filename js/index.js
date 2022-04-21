@@ -1,38 +1,5 @@
 window.sr = ScrollReveal();
 
-/*NAVBAR*/
-
-sr.reveal('#about-link', {
-  duration: 200,
-  origin: 'top',
-  distance: '20px'
-});
-sr.reveal('#experience-link', {
-  duration: 400,
-  origin: 'top',
-  distance: '20px'
-});
-sr.reveal('#work-link', {
-  duration: 600,
-  origin: 'top',
-  distance: '20px'
-});
-sr.reveal('#skills-link', {
-  duration: 800,
-  origin: 'top',
-  distance: '20px'
-});
-sr.reveal('#contact-link', {
-  duration: 1000,
-  origin: 'top',
-  distance: '20px'
-});
-sr.reveal('.resume', {
-  duration: 1200,
-  origin: 'top',
-  distance: '20px'
-});
-
 /*I AM*/
 
 sr.reveal('#iam-h1', {
