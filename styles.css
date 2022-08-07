@@ -725,6 +725,10 @@ html{
   color: #333;
 }
 
+#linkedin:hover{
+  color: #0E76A8;
+}
+
 #instagram:hover{
   color: #C13584;
 }
