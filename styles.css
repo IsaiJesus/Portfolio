@@ -257,8 +257,37 @@ html{
 }
 
 .iam-box p{
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 20px;
+}
+
+.resume-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+  .resume-mobile{
+    width: 80px;
+    padding: 14px 22px;
+    margin: 15px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #008cff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .resume-mobile:hover{
+    background-color: #001948;
+    color: #008cff;
+    outline: 1px solid #008cff;
+  }
 }
 
 .iam-img{

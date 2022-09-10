@@ -17,6 +17,11 @@ sr.reveal('#iam-p', {
   origin: 'top',
   distance: '50px'
 });
+sr.reveal('.resume-mobile', {
+  duration: 800,
+  origin: 'top',
+  distance: '50px'
+});
 sr.reveal('.iam-img', {
   duration: 1400,
   origin: 'bottom',
