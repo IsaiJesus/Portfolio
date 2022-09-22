@@ -122,6 +122,7 @@ html{
 .resume{
   padding: 12px 20px;
   margin: 10px;
+  text-align: center;
   border-radius: 5px;
   font-size: 15px;
   background-color: #008cff;
@@ -402,7 +403,7 @@ html{
 }
 
 .experience-title{
-  padding: 8px;
+  padding: 8px 8px 8px 0px;
   margin-bottom: 10px;
   display: flex;
   align-items: baseline;
@@ -411,6 +412,10 @@ html{
 
 .experience-title:hover{
   text-decoration: 1.4px #DADADA underline;
+}
+
+.fa-robot{
+  color: #7D5F9E;
 }
 
 .fa-medal{
@@ -628,7 +633,7 @@ html{
   top: 0;
   left: 0;
   position: absolute;
-  transform: skewY(-15deg);
+  transform: skewY(-10deg);
 }
 
 @media only screen and (max-width: 576px){
@@ -742,6 +747,11 @@ html{
   transition: 0.3s;
 }
 
+.social-box a:hover{
+  color: #fff;
+}
+
+/*
 #email:hover{
   color: #DE3F32;
 }
@@ -765,6 +775,7 @@ html{
 #twitter:hover{
   color: #1DA1F2;
 }
+*/
 
 .form-box{
   padding: 20px;

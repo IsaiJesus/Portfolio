@@ -49,11 +49,16 @@ sr.reveal('#experience-header', {
   distance: '50px'
 });
 sr.reveal('#experience-li1', {
-  duration: 1200,
+  duration: 1000,
   origin: 'left',
   distance: '50px'
 });
 sr.reveal('#experience-li2', {
+  duration: 1200,
+  origin: 'left',
+  distance: '50px'
+});
+sr.reveal('#experience-li3', {
   duration: 1400,
   origin: 'left',
   distance: '50px'
@@ -123,37 +128,37 @@ sr.reveal('.skills-box', {
 /*CONTACT*/
 
 sr.reveal('#contact-header', {
-  duration: 1000,
+  duration: 800,
   origin: 'bottom',
   distance: '50px'
 });
 sr.reveal('#contact-h5', {
-  duration: 1200,
+  duration: 1000,
   origin: 'bottom',
   distance: '50px'
 });
 sr.reveal('.social-box', {
-  duration: 1400,
+  duration: 1200,
   origin: 'bottom',
   distance: '50px'
 });
 sr.reveal('.name', {
-  duration: 1600,
+  duration: 1400,
   origin: 'bottom',
   distance: '50px'
 });
 sr.reveal('.email', {
-  duration: 1600,
+  duration: 1400,
   origin: 'bottom',
   distance: '50px'
 });
 sr.reveal('.message', {
-  duration: 1600,
+  duration: 1400,
   origin: 'bottom',
   distance: '50px'
 });
 sr.reveal('.send', {
-  duration: 1800,
+  duration: 1600,
   origin: 'bottom',
   distance: '50px'
 });
