@@ -338,12 +338,6 @@ html{
   color: #F5F8FF;
 }
 
-@media only screen and (max-width: 576px){
-  .about-container{
-    padding: 15px;
-  }
-}
-
 .about-container header{
   padding: 0px 20px;
 }
@@ -354,11 +348,22 @@ html{
 }
 
 .about-container p{
+  width: 75%;
   padding: 20px;
   margin-bottom: 8px;
   font-size: 20px;
   position: relative;
   z-index: 2;
+}
+
+@media only screen and (max-width: 576px){
+  .about-container{
+    padding: 15px;
+  }
+
+  .about-container p{
+    width: auto;
+  }
 }
 
 /*EXPERIENCE*/
@@ -380,12 +385,6 @@ html{
   transform: skewY(10deg);
 }
 
-@media only screen and (max-width: 576px){
-  .experience-container{
-    padding: 15px;
-  }
-}
-
 .experience-container header{
   padding: 0px 20px;
   position: relative;
@@ -397,6 +396,7 @@ html{
 }
 
 .experience-box{
+  width: 75%;
   padding: 20px;
   position: relative;
 }
@@ -410,6 +410,7 @@ html{
 .experience-title{
   padding: 8px 8px 8px 0px;
   margin-bottom: 10px;
+  width: fit-content;
   display: flex;
   align-items: baseline;
   text-decoration: none;
@@ -457,6 +458,16 @@ html{
 
 .experience-details p a{
   color: #F5F8FF;
+}
+
+@media only screen and (max-width: 576px){
+  .experience-container{
+    padding: 15px;
+  }
+
+  .experience-box{
+    width: auto;
+  }
 }
 
 /*WORK*/
