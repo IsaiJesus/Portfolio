@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-track{
-  background-color: #001948;
+  background-color: #1D1D1D;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -25,12 +25,19 @@
 
 html{
   scroll-behavior: smooth;
+  /*overflow-x: hidden;*/
 }
 
 /*CONTAINER*/
 
+/*
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-template-columns: repeat(12, 1fr);
+*/
+
 .container{
-  background-color: #FFFFFF;
+  background-color: #1E1E1E;
 }
 
 /*HEADER*/
@@ -45,7 +52,7 @@ html{
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: #001948;
+  background-color: #171717;
   color: #F5F8FF;
 }
 
@@ -116,7 +123,7 @@ html{
 }
 
 .link-nav:hover{
-  color: #008cff;
+  color: #A0A0A0;
 }
 
 .resume{
@@ -125,8 +132,8 @@ html{
   text-align: center;
   border-radius: 5px;
   font-size: 15px;
-  background-color: #008cff;
-  color: #fff;
+  background-color: #303135;
+  color: #F5F8FF;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -134,9 +141,8 @@ html{
 }
 
 .resume:hover{
-  background-color: #001948;
-  color: #008cff;
-  outline: 1px solid #008cff;
+  color: #F5F8FF;
+  outline: 1px solid #F5F8FF;
 }
 
 .fa-bars{
@@ -145,14 +151,14 @@ html{
   padding: 12px;
   font-size: 25px;
   background: none;
-  color: #008cff;
+  color: #F5F8FF;
   border: none;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .fa-bars:hover{
-  color: #F5F8FF;
+  color: #A0A0A0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,7 +176,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #001948;
+  background-color: #1D1D1D;
   position: fixed;
   z-index: 9;
   transition: all 0.8s ease;
@@ -210,16 +216,15 @@ html{
 }
 
 .menu-resume{
-  background-color: #008cff;
   border-radius: 5px;
-  color: #fff;
+  background-color: #303135;
+  color: #F5F8FF;
   transition: all 0.3s ease;
 }
 
 .menu-resume:hover{
-  outline: 1px solid #008cff;
-  background-color: #001948;
-  color: #008cff;
+  color: #F5F8FF;
+  outline: 1px solid #F5F8FF;
 }
 
 /*I AM*/
@@ -228,8 +233,7 @@ html{
   padding: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /*background-color: #001e56;*/
-  background-color: #001948;
+  background-color: #1D1D1D;
   color: #F5F8FF;
 }
 
@@ -277,17 +281,16 @@ html{
     border-radius: 5px;
     text-align: center;
     font-size: 18px;
-    background-color: #008cff;
-    color: #fff;
+    background-color: #303135;
+    color: #F5F8FF;
     border: none;
     cursor: pointer;
     text-decoration: none;
   }
   
   .resume-mobile:hover{
-    background-color: #001948;
-    color: #008cff;
-    outline: 1px solid #008cff;
+    color: #F5F8FF;
+    outline: 1px solid #F5F8FF;
   }
 }
 
@@ -296,13 +299,14 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .iam-img::after{
   content: '';
   position: absolute;
   border-radius: 62% 38% 39% 61% / 33% 42% 58% 67%;
-  background-color: #008cff;
+  background-color: #303135;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -330,7 +334,7 @@ html{
 
 .about-container{
   padding: 30px;
-  background-color: #001948;
+  background-color: #1D1D1D;
   color: #F5F8FF;
 }
 
@@ -361,14 +365,13 @@ html{
 
 .experience-container{
   padding: 30px;
-  position: relative;
-  background-color: #001948;
+  background-color: #1D1D1D;
   color: #F5F8FF;
 }
 
 .experience-container::before{
   content: '';
-  background-color: #008CFF;
+  background-color: #303135;
   height: 90%;
   width: 100%;
   top: 10;
@@ -385,6 +388,7 @@ html{
 
 .experience-container header{
   padding: 0px 20px;
+  position: relative;
 }
 
 .experience-container header h2{
@@ -394,6 +398,7 @@ html{
 
 .experience-box{
   padding: 20px;
+  position: relative;
 }
 
 .experience-box li{
@@ -407,11 +412,11 @@ html{
   margin-bottom: 10px;
   display: flex;
   align-items: baseline;
-  text-decoration: 1px #DADADA underline;
+  text-decoration: none;
 }
 
 .experience-title:hover{
-  text-decoration: 1.4px #DADADA underline;
+  text-decoration: 1px #DADADA underline;
 }
 
 .fa-robot{
@@ -442,7 +447,7 @@ html{
 
 .experience-title p{
   font-size: 18px;
-  color: rgb(72, 72, 72);
+  color: #B4B4B4;
 }
 
 .experience-details{
@@ -460,7 +465,7 @@ html{
   padding: 30px;
   display: flex;
   flex-direction: column;
-  background-color: #001948;
+  background-color: #1D1D1D;
   color: #F5F8FF;
 }
 
@@ -519,7 +524,7 @@ html{
 }
 
 .card a{
-  color: #FFF;
+  color: #F5F8FF;
   text-decoration: none;
 }
 
@@ -579,12 +584,12 @@ html{
   padding: 5px;
   font-size: 22px;
   text-decoration: none;
-  color: #008cff;
+  color: #F5F8FF;
   transition: 0.3s;
 }
 
 .card-link a:hover{
-  color: #F5F8FF;
+  color: #A0A0A0;
 }
 
 .more{
@@ -595,16 +600,16 @@ html{
   align-self: center;
   font-size: 16px;
   background-color: none;
-  color: #008cff;
-  border: 1px solid #008cff;
+  color: #F5F8FF;
+  outline: 1px solid #F5F8FF;
   border-radius: 5px;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .more:hover{
-  background-color: #008cff;
-  color: #fff;
+  background-color: #303135;
+  color: #F5F8FF;
 }
 
 .more span{
@@ -620,14 +625,14 @@ html{
 
 .skills-container{
   padding: 30px;
-  background-color: #001948;
+  background-color: #1D1D1D;
   color: #F5F8FF;
   position: relative;
 }
 
 .skills-container::before{
   content: '';
-  background-color: #008CFF;
+  background-color: #303135;
   height: 100%;
   width: 100%;
   top: 0;
@@ -643,6 +648,7 @@ html{
 }
 
 .skills-container header{
+  position: relative;
   padding: 0px 20px;
 }
 
@@ -653,6 +659,7 @@ html{
 
 .skills-box{
   padding: 20px;
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   align-items: center;
@@ -673,6 +680,7 @@ html{
   justify-content: center;
   flex-direction: column;
   list-style: none;
+  color: #F5F8FF;
 }
 
 .skills-box li img{
@@ -687,7 +695,7 @@ html{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #001948;
+  background-color: #1D1D1D;
   color: #F5F8FF;
 }
 
@@ -699,6 +707,7 @@ html{
 
 .contact-container header{
   padding: 0px 20px;
+  position: relative;
 }
 
 .contact-container header h2{
@@ -718,6 +727,7 @@ html{
   padding: 0px 20px;
   margin-bottom: 10px;
   font-size: 26px;
+  color: #F5F8FF;
 }
 
 .social-box{
@@ -742,40 +752,14 @@ html{
   padding: 8px;
   margin: 8px;
   font-size: 34px;
-  color: #008cff;
+  color: #F5F8FF;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .social-box a:hover{
-  color: #fff;
+  color: #A0A0A0;
 }
-
-/*
-#email:hover{
-  color: #DE3F32;
-}
-
-#whatsapp:hover{
-  color: #25D366;
-}
-
-#github:hover{
-  color: #333;
-}
-
-#linkedin:hover{
-  color: #0E76A8;
-}
-
-#instagram:hover{
-  color: #C13584;
-}
-
-#twitter:hover{
-  color: #1DA1F2;
-}
-*/
 
 .form-box{
   padding: 20px;
@@ -800,7 +784,7 @@ html{
   border-radius: 5px;
   color: #F5F8FF;
   outline: 1px solid #F5F8FF;
-  background-color: #001948;
+  background-color: #1D1D1D;
   border: none;
 }
 
@@ -821,7 +805,7 @@ html{
   border-radius: 5px;
   color: #F5F8FF;
   outline: 1px solid #F5F8FF;
-  background-color: #001948;
+  background-color: #1D1D1D;
   border: none;
   resize: none;
 }
@@ -840,8 +824,8 @@ html{
   margin-top: 10px;
   width: 130px;
   font-size: 16px;
-  background-color: #008cff;
-  color: #fff;
+  background-color: #303135;
+  color: #F5F8FF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -849,9 +833,8 @@ html{
 }
 
 .form-box button:hover{
-  background-color: #001948;
-  color: #008cff;
-  outline: 1px solid #008cff;
+  color: #F5F8FF;
+  outline: 1px solid #F5F8FF;
 }
 
 .pop-up{
