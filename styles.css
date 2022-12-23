@@ -24,14 +24,6 @@ html{
   /*overflow-x: hidden;*/
 }
 
-/*CONTAINER*/
-
-/*
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-template-columns: repeat(12, 1fr);
-*/
-
 .container{
   background-color: #1E1E1E;
 }
@@ -302,7 +294,7 @@ html{
   content: '';
   position: absolute;
   border-radius: 62% 38% 39% 61% / 33% 42% 58% 67%;
-  background-color: #303135;
+  background-color: #171717;
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -344,7 +336,7 @@ html{
 }
 
 .about-container p{
-  width: 75%;
+  width: 70%;
   padding: 20px;
   margin-bottom: 8px;
   font-size: 20px;
@@ -372,7 +364,7 @@ html{
 
 .experience-container::before{
   content: '';
-  background-color: #303135;
+  background-color: #171717;
   height: 90%;
   width: 100%;
   top: 10;
@@ -392,7 +384,7 @@ html{
 }
 
 .experience-box{
-  width: 75%;
+  width: 70%;
   padding: 20px;
   position: relative;
 }
@@ -639,7 +631,7 @@ html{
 
 .skills-container::before{
   content: '';
-  background-color: #303135;
+  background-color: #171717;
   height: 100%;
   width: 100%;
   top: 0;
