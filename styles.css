@@ -336,7 +336,7 @@ html{
 }
 
 .about-container p{
-  width: 70%;
+  max-width: 750px;
   padding: 20px;
   margin-bottom: 8px;
   font-size: 20px;
@@ -384,7 +384,7 @@ html{
 }
 
 .experience-box{
-  width: 70%;
+  max-width: 750px;
   padding: 20px;
   position: relative;
 }
