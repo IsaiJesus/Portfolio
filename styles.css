@@ -160,7 +160,7 @@ html{
 .menu-container{
   height: calc(100% - 89px);
   width: 100%;
-  left: -100%;
+  right: -100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,7 +172,7 @@ html{
 
 .menu-on{
   transition: all 0.8s ease;
-  left: 0;
+  right: 0;
 }
 
 .menu-container ul{
