@@ -31,7 +31,7 @@ html{
 /*HEADER*/
 
 .header-nav{
-  padding: 8px;
+  padding: 8px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,33 +44,36 @@ html{
   color: #F5F8FF;
 }
 
-.letter-logo{
-  font-size: 24px;
-  text-align: center;
-  animation: logo 8s alternate infinite;
+@media only screen and (max-width: 576px){
+  .header-nav{
+    padding: 8px 35px;
+  }
 }
 
-@keyframes logo{
-  0%{
-    color: #F46668;
-  }
-  16.66%{
-    color: #ED8E4F;
-  }
-  33.32%{
-    color: #FEFE15;
-  }
-  50%{
-    color: #16B69B;
-  }
-  66.64%{
-    color: #74DEFE;
-  }
-  83.3%{
-    color: #3C94DC;
-  }
-  100%{
-    color: #7D5F9E;
+.letter-logo{
+  font-size: 35px;
+  text-align: center;
+  line-height: 100%;
+  background: rgb(244,102,104);
+  background: 
+    linear-gradient(
+      135deg, 
+      rgba(244,102,104,1) 0%, 
+      rgba(237,142,79,1) 16%, 
+      rgba(254,254,21,1) 33%, 
+      rgba(22,182,155,1) 50%, 
+      rgba(116,222,254,1) 66%, 
+      rgba(60,148,220,1) 83%, 
+      rgba(125,95,158,1) 100%
+    );
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@media only screen and (max-width: 768px){
+  .letter-logo{
+    font-size: 30px;
   }
 }
 
@@ -81,21 +84,11 @@ html{
   text-decoration: none;
 }
 
-.img-logo img{
-  width: 60px;
-}
-
-@media only screen and (max-width: 576px) {
-  .img-logo h1{
-    display: none;
-  }
-}
-
 .nav-box{
   display: flex;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .nav-box{
     display: none;
   }
@@ -116,7 +109,7 @@ html{
 
 .resume{
   padding: 12px 20px;
-  margin: 10px;
+  margin: 8px 0 8px 12px;
   text-align: center;
   border-radius: 5px;
   font-size: 15px;
@@ -135,7 +128,7 @@ html{
 
 .fa-bars{
   display: none;
-  margin: 12px;
+  margin: 8px 0 8px 8px;
   padding: 12px;
   font-size: 25px;
   background: none;
@@ -149,7 +142,7 @@ html{
   color: #A0A0A0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .fa-bars{
     display: inline-block;
   }
@@ -218,6 +211,7 @@ html{
 /*I AM*/
 
 .iam-container{
+  margin-top: 12px;
   padding: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -240,17 +234,19 @@ html{
 }
 
 .iam-box header h1{
-  margin-bottom: 12px;
+  line-height: 1.2;
+  margin-bottom: 16px;
   font-size: 60px;
 }
 
 .iam-box header h2{
-  margin-bottom: 10px;
+  line-height: 1.2;
+  margin-bottom: 12px;
   font-size: 45px;
 }
 
 .iam-box p{
-  margin-bottom: 10px;
+  margin: 10px 0;
   font-size: 20px;
 }
 
@@ -283,7 +279,7 @@ html{
 }
 
 .iam-img{
-  padding: 0px 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,9 +289,9 @@ html{
 .iam-img::after{
   content: '';
   position: absolute;
-  border-radius: 62% 38% 39% 61% / 33% 42% 58% 67%;
+  border-radius: 54% 46% 38% 62% / 66% 55% 45% 34% ;
   background-color: #171717;
-  height: 100%;
+  height: 105%;
   width: 100%;
   z-index: 1;
 }
@@ -507,8 +503,14 @@ html{
   }
 }
 
-.card{
+.prueba1{
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -516,8 +518,6 @@ html{
   outline: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0px 12px 35px -25px rgba(0, 0, 0, 0.42);
   background-color: rgba(0, 0, 0, 0.06);
-  /*white-space: nowrap;
-  overflow: hidden;*/ 
 }
 
 .card:hover{
@@ -525,7 +525,10 @@ html{
   box-shadow: 0px 12px 35px -25px rgba(0, 0, 0, 0.8);
 }
 
-.card a{
+.card-body{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
   color: #F5F8FF;
   text-decoration: none;
 }
@@ -533,15 +536,12 @@ html{
 .card h5{
   margin-bottom: 10px;
   font-size: 22px;
-  /*overflow: hidden;
-  text-overflow: ellipsis;*/
 }
 
 .card p{
+  line-height: 1.1;
   margin-bottom: 12px;
   font-size: 18px;
-  /*overflow: hidden;
-  text-overflow: ellipsis;*/
 }
 
 .technologies{
@@ -561,14 +561,14 @@ html{
   height: 18px;
 }
 
-.card-body{
+.card-img{
   height: 200px;
   display: flex;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
-.card-body img{
+.card-img img{
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
@@ -577,12 +577,11 @@ html{
 .card-link{
   display: flex;
   align-self: flex-end;
-  margin-top: 5px;
-  padding: 2px;
+  padding: 0 15px 15px 0;
 }
 
 .card-link a{
-  margin: 4px 6px;
+  margin: 0 6px;
   padding: 5px;
   font-size: 22px;
   text-decoration: none;
@@ -617,10 +616,6 @@ html{
 .more span{
   padding-left: 6px;
   font-size: 18px;
-}
-
-.img-project{
-  width: 200px;
 }
 
 /*SKILLS*/
