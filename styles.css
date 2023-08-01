@@ -179,10 +179,13 @@ html{
 
 .menu-container ul li{
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .menu-container ul li a{
   padding: 12px 20px;
+  margin: 0 12px;
   font-size: 20px;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -457,9 +460,9 @@ html{
   }
 }
 
-/*WORK*/
+/*PROJECTS*/
 
-.work-container{
+.projects-container{
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -468,21 +471,21 @@ html{
 }
 
 @media only screen and (max-width: 576px) {
-  .work-container{
+  .projects-container{
     padding: 15px;
   }
 }
 
-.work-container header{
+.projects-container header{
   padding: 0px 20px;
 }
 
-.work-container header h2{
+.projects-container header h2{
   margin-bottom: 10px;
   font-size: 35px;
 }
 
-.work-box{
+.projects-box{
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -492,13 +495,13 @@ html{
 }
 
 @media only screen and (max-width: 768px) {
-  .work-box{
+  .projects-box{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .work-box{
+  .projects-box{
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -741,7 +744,7 @@ html{
 
 .social-box a{
   padding: 6px;
-  margin: 8px;
+  margin: 8px 12px;
   font-size: 34px;
   color: #F5F8FF;
   text-decoration: none;
@@ -890,7 +893,7 @@ html{
   scroll-margin-top: 78px;
 }
 
-#work{
+#projects{
   scroll-margin-top: 78px;
 }
 
