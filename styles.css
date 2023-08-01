@@ -178,12 +178,16 @@ html{
 }
 
 .menu-container ul li{
+  width: 100%;
   list-style: none;
-  display: flex;
+  display: flex;  
   align-items: center;
+  justify-content: center;
 }
 
 .menu-container ul li a{
+  width: 100px;
+  text-align: center;
   padding: 12px 20px;
   margin: 0 12px;
   font-size: 20px;
