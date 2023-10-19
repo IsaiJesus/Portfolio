@@ -46,7 +46,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .header-nav{
-    padding: 8px 35px;
+    padding: 8px 32px;
   }
 }
 
@@ -228,7 +228,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .iam-container{
-    padding: 15px;
+    padding: 12px;
   }
 }
 
@@ -349,7 +349,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .about-container{
-    padding: 15px;
+    padding: 12px;
   }
 
   .about-container p{
@@ -418,7 +418,7 @@ html{
   color: #FDFD15;
 }
 
-.fa-house-signal{
+.fa-users{
   color: #F46668;
 }
 
@@ -456,7 +456,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .experience-container{
-    padding: 15px;
+    padding: 12px;
   }
 
   .experience-box{
@@ -476,7 +476,7 @@ html{
 
 @media only screen and (max-width: 576px) {
   .projects-container{
-    padding: 15px;
+    padding: 12px;
   }
 }
 
@@ -509,13 +509,6 @@ html{
   .projects-box{
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.prueba1{
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .card{
@@ -648,7 +641,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .skills-container{
-    padding: 15px;
+    padding: 12px;
   }
 }
 
@@ -666,12 +659,18 @@ html{
   padding: 20px;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   align-items: center;
   justify-items: center;
 }
 
 @media only screen and (max-width: 768px) {
+  .skills-box{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 382px) {
   .skills-box{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -706,7 +705,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .contact-container{
-    padding: 15px;
+    padding: 12px;
   }
 }
 
