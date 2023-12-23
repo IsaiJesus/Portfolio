@@ -761,7 +761,7 @@ html{
 
 @media only screen and (max-width: 576px){
   .social-box{
-    width: auto;
+    width: 80%;
   }
 }
 
