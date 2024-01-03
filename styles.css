@@ -51,22 +51,7 @@ html{
 .letter-logo{
   font-size: 35px;
   text-align: center;
-  line-height: 100%;
-  background: rgb(244,102,104);
-  background: 
-    linear-gradient(
-      135deg, 
-      rgba(244,102,104,1) 0%, 
-      rgba(237,142,79,1) 16%, 
-      rgba(254,254,21,1) 33%, 
-      rgba(22,182,155,1) 50%, 
-      rgba(116,222,254,1) 66%, 
-      rgba(60,148,220,1) 83%, 
-      rgba(125,95,158,1) 100%
-    );
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 768px){
@@ -209,6 +194,12 @@ html{
   outline: 1px solid #AAA;
 }
 
+@media only screen and (max-width: 576px){
+  .menu-resume{
+    outline: 1px solid #F5F8FF;
+  }
+}
+
 /*I AM*/
 
 .iam-container{
@@ -268,13 +259,13 @@ html{
     background-color: #222222;
     color: #F5F8FF;
     border: none;
-    cursor: pointer;
+    outline: 1px solid #F5F8FF;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .resume-mobile:hover{
     color: #F5F8FF;
-    outline: 1px solid #F5F8FF;
   }
 }
 
@@ -331,13 +322,18 @@ html{
   font-size: 35px;
 }
 
-.about-container p{
-  max-width: 72ch;
+.about-container div{
   padding: 20px;
   margin: 0 0 8px 0;
-  font-size: 20px;
   position: relative;
   z-index: 2;
+}
+
+.about-container div p{
+  max-width: 70ch;
+  margin-bottom: 12px;
+  font-size: 20px;
+  text-wrap: pretty;
 }
 
 @media only screen and (max-width: 576px){
@@ -885,6 +881,12 @@ html{
   background-color: #F5F8FF;
   outline: 1px solid #ef233c;
   color: #ef233c;
+}
+
+@media only screen and (max-width: 768px){
+  .form-box button{
+    outline: 1px solid #F5F8FF;
+  }
 }
 
 /*LINKS*/
