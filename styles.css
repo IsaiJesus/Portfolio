@@ -529,9 +529,10 @@ html{
 }
 
 .projects-box{
+  max-width: 800px;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   position: relative;
   z-index: 2;
@@ -670,15 +671,6 @@ html{
   color: #F5F8FF;
 }
 
-@media only screen and (max-width: 576px){
-  .skills-container{
-    padding: 12px;
-  }
-  .more{
-    color: #F5F8FF;
-  }
-}
-
 .skills-container header{
   position: relative;
   padding: 0px 20px;
@@ -694,13 +686,26 @@ html{
   max-width: 800px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   justify-items: center;
+}
+
+@media only screen and (max-width: 576px){
+  .skills-box{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .skills-container{
+    padding: 12px;
+  }
+  .more{
+    color: #F5F8FF;
+  }
 }
 
 .skills-box div{
   padding: 15px;
-  margin: 10px;
-  width: calc(100% - 50px);
+  width: calc(100% - 30px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -734,7 +739,7 @@ html{
 
 .skills-box li img{
   height: 38px;
-  max-width: 52px;
+  max-width: 48px;
   object-fit: contain;
   margin-bottom: 8px;
 }
