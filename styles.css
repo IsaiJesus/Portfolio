@@ -21,7 +21,6 @@
 
 html{
   scroll-behavior: smooth;
-  /*overflow-x: hidden;*/
 }
 
 .container{
@@ -257,6 +256,7 @@ html{
   line-height: 1.2;
   margin-bottom: 12px;
   font-size: 45px;
+  text-wrap: pretty;
 }
 
 .iam-box p{
