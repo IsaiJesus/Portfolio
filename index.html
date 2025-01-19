@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#121212" />
   <meta name="author" content="Isai Jesús" />
   <meta name="keywords"
-    content="portfolio, portafolio, Isai Jesus Tapia Alcazar, Isai Jesús, Morelos, software engineer, data scientist, frontend, developer" />
+    content="portfolio, portafolio, Isai Jesús, Morelos, Mexico, software engineer, data scientist, frontend, web, developer" />
   <link href="img/favicon.ico" rel="shortcut icon" />
   <script src="https://kit.fontawesome.com/ecc43e018a.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;800;900&display=swap" rel="stylesheet" />
@@ -16,53 +16,43 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header-nav">
-      <a href="index.html" class="img-logo">
-        <h1 class="letter-logo">Isai Jesús</h1>
+  <div>
+    <nav class="header-nav">
+      <a href="index.html" class="letter-logo">
+        <h1>Isai Jesús</h1>
       </a>
       <div class="nav-box">
         <a href="#about" class="link-nav">About</a>
         <a href="#experience" class="link-nav">Experience</a>
-        <a href="#projects" class="link-nav">Projects</a>
+        <a href="#web-projects" class="link-nav">Web Projects</a>
+        <a href="#data-science-projects" class="link-nav">Data Science Projects</a>
         <a href="#skills" class="link-nav">Skills</a>
-        <a href="https://www.isaijesus.courses/" target="_blank" class="resume">Blog</a>
-        <a href="/cv-isaijesus.pdf" target="_blank" class="resume">Resumé</a>
+        <a href="https://www.isaijesus.courses/" target="_blank" class="link-ext">Blog</a>
+        <a href="/cv-isaijesus.pdf" target="_blank" class="link-ext">Resume</a>
       </div>
-      <button id="menu" class="fas fa-bars"></button>
-    </header>
+      <button id="bar-menu" class="fas fa-bars"></button>
+    </nav>
 
-    <div class="menu-container">
-      <ul>
-        <li>
-          <a href="#about" id="link1" class="link-menu">About</a>
-        </li>
-        <li>
-          <a href="#experience" id="link2" class="link-menu">Experience</a>
-        </li>
-        <li>
-          <a href="#projects" id="link3" class="link-menu">Projects</a>
-        </li>
-        <li>
-          <a href="#skills" id="link4" class="link-menu">Skills</a>
-        </li>
-        <li>
-          <a href="https://www.isaijesus.courses/" target="_blank" class="menu-resume">Blog</a>
-          <a href="/cv-isaijesus.pdf" target="_blank" class="menu-resume">Resumé</a>
-        </li>
-      </ul>
-    </div>
+    <nav class="nav-mobile-box">
+      <a href="#about" class="link-nav link-button">About</a>
+      <a href="#experience" class="link-nav link-button">Experience</a>
+      <a href="#web-projects" class="link-nav link-button">Web Projects</a>
+      <a href="#data-science-projects" class="link-nav link-button">Data Science Projects</a>
+      <a href="#skills" class="link-nav link-button">Skills</a>
+      <a href="https://www.isaijesus.courses/" class="link-ext link-button" target="_blank">Blog</a>
+      <a href="/cv-isaijesus.pdf" class="link-ext link-button" target="_blank">Resume</a>
+    </nav>
 
-    <section class="iam-container">
+    <header class="iam-container">
       <div class="iam-box">
         <header>
           <h1>Hey, I am Isai Jesús</h1>
-          <h2>Providing technological solutions 🧠</h2>
+          <h2>Exploring technology to drive meaningful change 🚀</h2>
         </header>
         <p>
-          <strong>Software Engineer</strong> and
-          <strong>Front End Web Developer </strong>passionate about creating
-          innovative digital experiences.
+          <strong>Software Engineer</strong> specializing in
+          <strong>Data Science</strong> and <strong>Frontend Web</strong>,
+          Future-focused developer passionate about research and crafting technology that makes a difference.
         </p>
         <div class="social-box">
           <a href="https://github.com/IsaiJesus" target="_blank" id="github" class="fab fa-github"></a>
@@ -73,9 +63,9 @@
       <div class="iam-img">
         <img src="img/avatar.webp" alt="Isai Jesús" />
       </div>
-    </section>
+    </header>
 
-    <section id="about" class="about-container">
+    <section id="about" class="container">
       <header>
         <h2>About</h2>
       </header>
@@ -87,14 +77,23 @@
           Enjoy participating in challenges that help me acquire knowledge and
           new experiences. <br />
           I've participated in several
-          <strong>Hackathons</strong> and
-          <strong>Informatics Olympiads</strong> at the
+          <strong>Informatics Olympiads</strong> and
+          <strong>Hackathons</strong>
+           at the
           <strong>state and national level</strong>. 🏆
         </p>
         <p>
-          Currently, learning about <strong>Data Science</strong> and
-          <strong>Machine Learning</strong>
+          Currently, studying <strong>Software Engineering</strong> with a specialization in 
+          <strong>Data Science</strong> and autonomously reinforcing topics in 
+          <strong>Machine Learning</strong> and <strong>Frontend Web Development</strong> 
           developing my own projects. 📊
+        </p>
+        <p>
+          I enjoy participating in <strong>research</strong> and 
+          <strong>entrepreneurship</strong> projects, especially those focused on 
+          innovative technologies, sustainability, and solving real-world problems. 🍃 
+          Collaborating with peers on these projects has allowed me to enhance my teamwork and 
+          leadership skills while contributing to meaningful outcomes.
         </p>
         <p>
           Passionate about diverse development projects, with a focus on
@@ -106,11 +105,24 @@
       </div>
     </section>
 
-    <section id="experience" class="experience-container">
+    <section id="experience" class="container">
       <header>
         <h2>Experience</h2>
       </header>
       <ul class="experience-box">
+        <li>
+          <a href="https://www.zonacentronoticias.com/2024/05/congrega-startup-weekend-morelos-a-universitarios-para-generar-un-ambiente-de-colaboracion-e-innovacion/" target="_blank" class="experience-title">
+            <span class="fas fa-leaf"></span>
+            <h4>Startup Weekend</h4>
+            <p>May 2024</p>
+          </a>
+          <div class="experience-details">
+            <p>
+              Won the first place in Startup Weekend Morelos, where we developed a sustainable product. <br />
+              A drywall made from mycelium and agricultural waste.
+            </p>
+          </div>
+        </li>
         <li>
           <a href="https://itoinnovatecnm.com/" target="_blank" class="experience-title">
             <span class="fas fa-trophy"></span>
@@ -121,7 +133,7 @@
             <p>
               Managed to advance from the regional stage to the national stage
               of an innovation event. <br />
-              Where I played the role of frontend, making an important
+              I played the role of frontend, making an important
               contribution to my team.
             </p>
           </div>
@@ -135,7 +147,7 @@
           <div class="experience-details">
             <p>
               Advanced to the national phase in an international competition
-              on algorithms. <br />
+              of algorithms. <br />
               Made history as the first team of my university to reach this
               advanced stage, recognized as the best in my state.
             </p>
@@ -149,9 +161,9 @@
           </a>
           <div class="experience-details">
             <p>
-              Won the third place in a hackathon "HackaTec", in which I
-              created an AI with multiple linear regression, where I primarily
-              to lead and work as a team. I secured an internship with the
+              Won the third place in a hackathon "HackaTec", in which we
+              created an AI with linear regression, where I primarily
+              lead and work as a team. I secured an internship with the
               <a href="https://www.beeckerco.com/" target="_blank">BeeckerCo</a>
               company.
             </p>
@@ -190,9 +202,9 @@
       </ul>
     </section>
 
-    <section id="projects" class="projects-container">
+    <section id="web-projects" class="projects container">
       <header>
-        <h2>Projects</h2>
+        <h2>Web Projects</h2>
       </header>
       <div class="projects-box">
         <div class="card">
@@ -207,7 +219,7 @@
                 <img src="img/icons/javascript.webp" alt="javascript" />
               </li>
               <li>
-                <img src="img/icons/next.webp" alt="nextjs" />
+                <img src="img/icons/next.svg" alt="nextjs" />
               </li>
               <li>
                 <img src="img/icons/reactjs.webp" alt="reactjs" />
@@ -216,7 +228,7 @@
                 <img src="img/icons/css.png" alt="css" />
               </li>
               <li>
-                <img src="img/icons/mongodb.webp" alt="mongodb" />
+                <img src="img/icons/mongodb.svg" alt="mongodb" />
               </li>
               <li>
                 <img src="img/icons/md.webp" alt="markdown" />
@@ -289,7 +301,7 @@
             </p>
             <ul class="technologies">
               <li>
-                <img src="img/icons/next.webp" alt="nextjs" />
+                <img src="img/icons/next.svg" alt="nextjs" />
               </li>
               <li>
                 <img src="img/icons/reactjs.webp" alt="reactjs" />
@@ -298,7 +310,7 @@
                 <img src="img/icons/tailwind.webp" alt="tailwind" />
               </li>
               <li>
-                <img src="img/icons/mongodb.webp" alt="mongodb" />
+                <img src="img/icons/mongodb.svg" alt="mongodb" />
               </li>
             </ul>
             <div class="card-img">
@@ -368,13 +380,106 @@
       </a>
     </section>
 
-    <section id="skills" class="skills-container">
+    <section id="data-science-projects" class="projects container">
+      <header>
+        <h2>Data Science Projects</h2>
+      </header>
+      <div class="projects-box">
+        <div class="card">
+          <a class="card-body" href="https://github.com/IsaiJesus/feelings" target="_blank">
+            <h5>🙂 Feelings</h5>
+            <p>Project to analyze emotions and daily activities to relate them to each other.</p>
+            <ul class="description">
+              <li>Personal datasets</li>
+              <li>Behavior between emotions and activities</li>
+              <li>Influence between activities and emotions</li>
+              <li>Predicting emotion from activities</li>
+            </ul>
+            <ul class="technologies">
+              <li>
+                <img src="img/icons/pandas.webp" alt="pandas" />
+              </li>
+              <li>
+                <img src="img/icons/matplotlib.webp" alt="matplotlib" />
+              </li>
+              <li>
+                <img src="img/icons/scikitlearn.webp" alt="scikitlearn">
+              </li>
+            </ul>
+          </a>
+          <div class="card-link">
+            <a href="https://github.com/IsaiJesus/feelings" target="_blank" class="fab fa-github"></a>
+          </div>
+        </div>
+        <div class="card">
+          <a class="card-body" href="https://github.com/IsaiJesus/HackaTec-Filtro-2024" target="_blank">
+            <h5>🩺 Hackathon</h5>
+            <p>Predict if a person might have lung cancer and manage responses with a Telegram chatbot.</p>
+            <ul class="description">
+              <li>Dataset given by my school with simulated data</li>
+              <li>EDA, models and chatbot</li>
+              <li>Models exported with joblib</li>
+              <li>Telegram chatbot</li>
+            </ul>
+            <ul class="technologies">
+              <li>
+                <img src="img/icons/python.webp" alt="python">
+              </li>
+              <li>
+                <img src="img/icons/pandas.webp" alt="pandas"/>
+              </li>
+              <li>
+                <img src="img/icons/matplotlib.webp" alt="matplotlib"/>
+              </li>
+              <li>
+                <img src="img/icons/scikitlearn.webp" alt="scikitlearn">
+              </li>
+            </ul>
+          </a>
+          <div class="card-link">
+            <a href="https://github.com/IsaiJesus/HackaTec-Filtro-2024" target="_blank" class="fab fa-github"></a>
+          </div>
+        </div>
+        <div class="card">
+          <a class="card-body" href="https://github.com/IsaiJesus/House-Prices" target="_blank">
+            <h5>🏠 House Prices</h5>
+            <p>Predict the price of a house with several features.</p>
+            <ul class="description">
+              <li>Dataset from Kaggle</li>
+              <li>Structure implemented by ChatGPT</li>
+              <li>Best model chosen by GridSearch CV</li>
+            </ul>
+            <ul class="technologies">
+              <li>
+                <img src="img/icons/pandas.webp" alt="pandas" />
+              </li>
+              <li><img src="img/icons/numpy.svg" alt="numpy"></li>
+              <li>
+                <img src="img/icons/matplotlib.webp" alt="matplotlib" />
+              </li>
+              <li>
+                <img src="img/icons/scikitlearn.webp" alt="scikitlearn">
+              </li>
+            </ul>
+          </a>
+          <div class="card-link">
+            <a href="https://github.com/IsaiJesus/House-Prices" target="_blank" class="fab fa-github"></a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/IsaiJesus" target="_blank" class="more">
+        More projects
+        <span class="fas fa-arrow-right"></span>
+      </a>
+    </section>
+
+    <section id="skills" class="container">
       <header>
         <h2>Skills</h2>
       </header>
       <div class="skills-box">
         <div>
-          <h3>Frontend</h3>
+          <h4>Frontend</h4>
           <ul>
             <li><img src="img/icons/html.svg" alt="HTML" />HTML</li>
             <li><img src="img/icons/css.png" alt="CSS" />CSS</li>
@@ -385,25 +490,23 @@
               <img src="img/icons/typescript.svg" alt="TypeScript" />TypeScript
             </li>
             <li><img src="img/icons/reactjs.webp" alt="React-JS" />React JS</li>
-            <li><img src="img/icons/next.webp" alt="Next-JS" /> Next JS</li>
+            <li><img src="img/icons/next.svg" alt="Next-JS" /> Next JS</li>
             <li><img src="img/icons/redux.svg" alt="Redux" />Redux</li>
+            <li><img src="img/icons/astro.svg" alt="Astro" />Astro</li>
             <li><img src="img/icons/sass.webp" alt="SASS" />SASS</li>
             <li>
               <img src="img/icons/bootstrap.png" alt="Bootstrap" />Bootstrap
             </li>
             <li><img src="img/icons/tailwind.webp" alt="Tailwind" />Tailwind</li>
-            <li>
-              <img src="img/icons/material-ui.svg" alt="Material-ui" />Material UI
-            </li>
           </ul>
         </div>
         <div>
           <h3>Backend</h3>
           <ul>
             <li><img src="img/icons/nodejs.svg" alt="Node JS" />Node JS</li>
-            <li><img src="img/icons/express.webp" alt="Express JS" />Express JS</li>
-            <li><img src="img/icons/mongodb.webp" alt="MongoDB" />MongoDB</li>
-            <li><img src="img/icons/postgresql.png" alt="PostgreSQL" />PostgreSQL</li>
+            <li><img src="img/icons/express.svg" alt="Express JS" />Express JS</li>
+            <li><img src="img/icons/mongodb.svg" alt="MongoDB" />MongoDB</li>
+            <li><img src="img/icons/postgresql.svg" alt="PostgreSQL" />PostgreSQL</li>
             <li><img src="img/icons/mysql.webp" alt="MySQL" />MySQL</li>
             <li><img src="img/icons/django.webp" alt="Django" />Django</li>
             <li><img src="img/icons/php.svg" alt="PHP" />PHP</li>
@@ -415,8 +518,9 @@
             <li><img src="img/icons/python.webp" alt="Python" />Python</li>
             <li><img src="img/icons/jupyternotebook.webp" alt="Jupyter Notebook" />Jupyter Notebook</li>
             <li><img src="img/icons/pandas.webp" alt="Pandas" />Pandas</li>
-            <li><img src="img/icons/numpy.webp" alt="Numpy" />Numpy</li>
+            <li><img src="img/icons/numpy.svg" alt="Numpy" />Numpy</li>
             <li><img src="img/icons/matplotlib.webp" alt="Matplotlib" />Matplotlib</li>
+            <li><img src="img/icons/seaborn.webp" alt="Seaborn">Seaborn</li>
             <li><img src="img/icons/scikitlearn.webp" alt="Scikit Learn" />Scikit Learn</li>
           </ul>
         </div>
@@ -425,6 +529,8 @@
           <ul>
             <li><img src="img/icons/git.webp" alt="Git" />Git</li>
             <li><img src="img/icons/c++.webp" alt="C++" />C++</li>
+            <li><img src="img/icons/linux.svg" alt="Linux" />Linux</li>
+            <li><img src="img/icons/aws.png" alt="AWS" />AWS</li>
             <li><img src="img/icons/java.webp" alt="Java" />Java</li>
             <li><img src="img/icons/flutter.webp" alt="Flutter" />Flutter</li>
             <li><img src="img/icons/arduino.webp" alt="Arduino" />Arduino</li>
