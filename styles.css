@@ -334,6 +334,10 @@ html{
   font-size: 22px;
 }
 
+.fa-school{
+  color: #5287C5;
+}
+
 .fa-leaf{
   color: #008000;
 }
@@ -343,19 +347,16 @@ html{
 }
 
 .fa-users{
-  color: #5287C5;
+  color: #d90429;
+  
 }
 
 .fa-robot{
   color: #7242B9;
 }
 
-.fa-motorcycle{
-  color: #0DBB33;
-}
-
 .fa-medal{
-  color: #d90429;
+  color: #0DBB33;
 }
 
 .experience-title h4{
